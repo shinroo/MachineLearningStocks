@@ -17,3 +17,18 @@ Backtest the performance of the machine learning model
 Acquire current fundamental data
 Generate predictions from current fundamental data
 This is a very generalised overview, but in principle this is all you need to build a fundamentals-based ML stock predictor.
+
+
+# Quickstart
+If you want to throw away the instruction manual and play immediately, clone this project, then download and unzip the data file into the same directory. Then, open an instance of terminal and cd to the project's file path, e.g
+
+     cd Users/User/Desktop/MachineLearningStocks
+Then, run the following in terminal:
+
+     pip install -r requirements.txt
+     python download_historical_prices.py
+     python parsing_keystats.py
+    python backtesting.py
+    python current_data.py
+    pytest -v
+    python stock_prediction.py
